@@ -1,0 +1,94 @@
+.blue-bar {
+    height: 50px;
+    background: var(--nh-blue);
+}
+
+.blue-bar a {
+    color: whitesmoke;
+    padding: 15px;
+    float: left;
+    cursor: pointer;
+}
+
+.top {
+    width: 100%;
+}
+
+#back {
+    position: relative;
+    right: 5px;
+}
+
+#logout {
+    cursor: pointer;
+    float: right;
+}
+
+.patient-name {
+    position: absolute;
+    padding: 15px 15px;
+    right: 0;
+}
+
+.access {
+    flex-grow: 1;
+}
+
+.bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+#bars, #home {
+    padding: 15px 10px 15px 20px;
+}
+
+.navbar {
+    display: flex;
+    color: whitesmoke;
+    background: #707070;
+    width: 100%;
+    height: 50px;
+}
+
+.navbar div:focus {
+    outline: none;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.navbar i {
+    transform: scale(2);
+}
+
+.navbar div {
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+.dropdown {
+    z-index: 5;
+    margin-top: 25px;
+    background: #505050;
+    text-align: left;
+}
+
+.dropdown div {
+    background: #505050;
+    display: block;
+    padding: 10px;
+}
+
+.dropdown div:hover {
+    background-color: whitesmoke;
+    color: #4b4b4b;
+}
+
+.space {
+    height: 100px;
+}

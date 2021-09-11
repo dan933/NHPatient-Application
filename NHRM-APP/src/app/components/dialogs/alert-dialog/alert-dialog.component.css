@@ -1,0 +1,34 @@
+fa-icon {
+    color: #C4393C;
+    justify-self: center;
+    font-size: 10vh;
+}
+
+.alert-button {
+    cursor: pointer;
+    font-size: 14px bold;
+    font-weight: bold;
+    color: white;
+    background: #C4393C;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    margin: 15px;
+    padding: 15px;
+    text-decoration: none;
+    width: 120px;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.text {
+    font-size: 1.4em;
+    font-weight: 500;
+    width: 80%;
+}

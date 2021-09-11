@@ -1,0 +1,48 @@
+<app-login *ngIf="!this.loggedIn"></app-login>
+<app-welcome *ngIf="!this.authorised && this.loggedIn"></app-welcome>
+<ngx-spinner bdColor="rgba(0, 0, 0, 0.8)" size="medium" color="#005CB9" type="ball-clip-rotate-multiple"
+    [fullScreen]="true">
+    <p style="color: white"> Waiting ... </p>
+</ngx-spinner>
+<div *ngIf="this.authorised && this.loggedIn">
+    <header>
+        <div class="blue-bar top">
+            <a *ngIf="!isRoot" (click)="goBack()">
+                <fa-icon id="back" [icon]="['fas', 'chevron-left']" transform="grow-5"></fa-icon>Back
+            </a>
+            <a id="logout" (click)="logout()">
+                Logout
+            </a>
+        </div>
+
+        <div class="nh-logo"></div>
+
+        <nav class="navbar">
+            <a id="home" routerLink="home">
+                <fa-icon [icon]="['fas', 'home']" transform="grow-15"></fa-icon>
+            </a>
+
+            <a id="bars" (click)="dropdown()">
+                <i #bars class="fa fa-bars"></i>
+            </a>
+
+            <div class="dropdown" [ngStyle]=" {'display' : this.toggle ? 'none' : 'block'}">
+                <div *ngIf="checkCategory(1)" routerLink="my-ipc" (click)="selectCategory(1)">My IPC</div>
+                <div *ngIf="checkCategory(2)" routerLink="404-error" (click)="selectCategory(2)">My Asthma</div>
+                <div *ngIf="checkCategory(3)" routerLink="404-error" (click)="selectCategory(3)">My COPD</div>
+                <div routerLink="settings">My Settings</div>
+                <div routerLink="help-info">Help Info</div>
+            </div>
+
+            <div class="patient-name">
+                Welcome {{patientName}}
+            </div>
+
+        </nav>
+
+    </header>
+    <div class="middle-space">
+        <router-outlet></router-outlet>
+    </div>
+    <div class="space"></div>
+    <footer class="blue-bar bottom"></footer>

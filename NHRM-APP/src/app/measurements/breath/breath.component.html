@@ -1,0 +1,9 @@
+<div class="heading">
+    <h1 class="main-heading">Likert Scale (Breathlessness)</h1>
+    <h3 class="sub-heading">Tick the box beside the face that
+        is closest to how your Breathing is feeling today</h3>
+</div>
+
+<app-info-bar (click)="infoDialog()"></app-info-bar>
+
+<app-likert [feelings]="feelings" (likertValue)="getBreathScore($event)"></app-likert>

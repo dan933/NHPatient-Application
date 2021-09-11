@@ -1,0 +1,29 @@
+h1 {
+    text-align: center;
+    font-size: 35px;
+    margin: 5px;
+}
+
+.help-nav {
+    margin: auto;
+    max-width: 600px;
+}
+
+.help-space {
+    margin: auto;
+    max-width: 700px;
+}
+
+.help-btn:active {
+    color: whitesmoke;
+}
+
+.help-btn {
+    cursor: pointer;
+    outline: none;
+    width: 150px;
+    height: 25px;
+    border-radius: 5px;
+    margin: 2px;
+    font-weight: bold;
+}

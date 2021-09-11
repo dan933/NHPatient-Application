@@ -1,0 +1,23 @@
+<div class="welcome-page">
+    <img src="assets/svg/logo.svg" class="logo" alt="Northern Health Logo">
+    <h1 class="main-heading">Welcome</h1>
+    <p class="warning">Data is secured as per Terms & Conditions and Privacy Statement.</p>
+    <div class="condition">
+        <input type="checkbox" id="terms-and-conditions" [(ngModel)]="this.terms">
+        <label for="terms-and-conditions">I agree to the Northern Health</label>
+        <br>
+        <a (click)="openTerms()">Terms and Conditions.</a>
+    </div>
+    <div class="condition">
+        <input type="checkbox" id="privacy-message" [(ngModel)]="this.privacy">
+        <label for="privacy-message">I agree to the Northern Health</label>
+        <br>
+        <a (click)="openPrivacy()">Privacy Statement.</a>
+    </div>
+    <div class="error-message">
+        <div class="error" *ngIf="this.terms == false || this.privacy == false">
+            <p>You must agree to both the Terms & Conditions and the Privacy Statement in order to proceed</p>
+        </div>
+    </div>
+    <button type="submit" class="submit-button" (click)="submit()" value="Accept">Submit</button>
+</div>

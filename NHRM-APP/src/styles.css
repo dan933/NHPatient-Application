@@ -1,0 +1,315 @@
+/* You can add global styles to this file, and also import other style files */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --nh-blue: #005CB9;
+    --nh-grey: #707070;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.middle-space {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.nh-logo {
+    background-image: url(../src/assets/svg/logo.svg);
+    margin: 10px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 90% 90%;
+}
+
+header {
+    height: auto;
+    font-weight: bold;
+    text-align: center;
+}
+
+.heading {
+    text-align: center;
+    padding: 5px;
+    margin: 20px;
+}
+
+.main-heading {
+    font-size: 22px;
+    color: var(--nh-blue);
+}
+
+.sub-heading {
+    font-size: 18px;
+    color: #707070;
+    margin: auto;
+    max-width: 800px;
+}
+
+.category-name {
+    color: #0459bd;
+    font-size: 40px;
+    font-weight: bold;
+    border-bottom: 4px solid var(--nh-blue);
+    padding-bottom: 10px;
+}
+
+label[for*="formly"] .custom-control-input {
+    width: 10px;
+    height: 10px;
+}
+
+input[type=checkbox] {
+    transform: scale(1.2);
+}
+
+input[type=radio] {
+    justify-self: center;
+    transform: scale(1);
+    padding: 15px;
+    -webkit-appearance: none;
+    outline: 1px solid black;
+}
+
+input[type=radio]:checked {
+    background-color: var(--nh-blue);
+}
+
+.custom-radio {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.custom-radio .custom-control-label {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 20px 0px 0px;
+}
+
+@media (min-width: 550px) {
+    .custom-radio .custom-control-label {
+        max-width: auto;
+        flex-grow: 1;
+    }
+}
+
+.btn {
+    color: white;
+    background-color: var(--nh-blue);
+    border-radius: 17px;
+}
+
+.submit-button {
+    cursor: pointer;
+    margin: 30px auto 100px auto;
+    justify-self: center;
+    background-color: var(--nh-blue);
+    border-radius: 15px;
+    width: 150px;
+    height: 40px;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: large;
+    outline: none;
+    border: none;
+}
+
+.disabled-btn {
+    opacity: .7;
+}
+
+.main-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+}
+
+.main-wide-buttons {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.main-buttons>div>div {
+    flex-grow: 1;
+    width: 33%;
+}
+
+.main-btn p {
+    margin-top: 8px;
+    line-height: 110%;
+    font-family: 'Segoe UI';
+    font-size: 15px;
+}
+
+.main-btn:focus {
+    outline: none;
+    border-bottom: 2px solid silver;
+    border-right: 2px solid silver;
+    border-top: 2px solid rgb(80, 80, 80);
+    border-left: 2px solid rgb(80, 80, 80);
+}
+
+.main-btn {
+    border-radius: 10px;
+    border-top: 2px solid silver;
+    border-left: 2px solid silver;
+    border-bottom: 2px solid rgb(80, 80, 80);
+    border-right: 2px solid rgb(80, 80, 80);
+    color: #f5f5f5;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 25px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+}
+
+.btn-reg {
+    margin: 5px;
+    width: 150px;
+    height: 95px;
+}
+
+.btn1 {
+    background: linear-gradient(180deg, #75BFE7, #4d8ab8);
+}
+
+.btn2 {
+    background: linear-gradient(180deg, #8AD999, #478a53);
+}
+
+.btn3 {
+    background: linear-gradient(180deg, #AA6DB4, #862F93);
+}
+
+.btn4 {
+    background: linear-gradient(180deg, #EBA563, #DB834D);
+}
+
+.btn5 {
+    background: linear-gradient(180deg, #D67AAF, #C43984);
+}
+
+.btn6 {
+    background: linear-gradient(180deg, #749ACE, #3468B8);
+}
+
+.btn7 {
+    background: linear-gradient(180deg, #db5d5d, #b83737);
+}
+
+.btn-wide {
+    margin: 5px;
+    height: 75px;
+    width: 310px;
+}
+
+.dialog-style {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4vh;
+    text-align: center;
+}
+
+mat-dialog-content, h2 {
+    text-align: center;
+}
+
+.alert-dialog-container .mat-dialog-container {
+    border-top: 20px#C4393C solid;
+    box-shadow: none;
+    background: #F9EAEA;
+    color: black;
+    min-height: fit-content;
+    max-width: 650px;
+    padding: 10px;
+}
+
+.confirmation-dialog-container .mat-dialog-container {
+    box-shadow: none;
+    border-radius: 20px;
+    background: #e9e9d7;
+    color: black;
+    min-height: fit-content;
+    width: fit-content;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.confirmation-dialog-container .mat-dialog-container input {
+    cursor: pointer;
+    justify-self: center;
+    margin: 3px;
+    background-color: #929245;
+    border-radius: 10px;
+    width: 100px;
+    height: 40px;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: large;
+    outline: none;
+    border: none;
+}
+
+.information-dialog-container .mat-dialog-container {
+    border-top: 20px #005CB9 solid;
+    box-shadow: none;
+    background: #d8e9fa;
+    color: black;
+    font-size: 1.2em;
+    min-height: fit-content;
+    width: fit-content;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.measurements-complete-container .mat-dialog-container {
+    box-shadow: none;
+    background: whitesmoke;
+    border-radius: 30px;
+    border: 5px #66db66 solid;
+    color: black;
+    min-height: fit-content;
+    min-width: fit-content;
+    font-weight: 500;
+    font-size: 1.2em;
+    line-height: normal;
+}
+
+.success-dialog-container .mat-dialog-container {
+    box-shadow: none;
+    background: whitesmoke;
+    border-radius: 30px;
+    color: black;
+    min-height: fit-content;
+    min-width: fit-content;
+}
+
+#done {
+    color: rgb(94, 255, 94);
+}
+
+.help{
+    max-width: 100%;
+}
+/* .help:hover{
+    max-width: none;
+    display: block;
+    border: solid medium gray;
+} */

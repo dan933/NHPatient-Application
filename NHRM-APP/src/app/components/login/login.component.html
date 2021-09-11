@@ -1,0 +1,17 @@
+<div class="nh-logo"></div>
+<div class="container">
+    <h1 class="login-title">Login</h1>
+    <form class="inputs" #loginForm="ngForm" (ngSubmit)="login(loginForm.form);">
+        <input type="text" id="email" placeholder="E-mail" name="email" ngModel #emailField="ngModel" required>
+        <input type="password" id="password" placeholder="Password" name="password" ngModel #passwordField="ngModel"
+            required>
+        <div>
+            <div class="error" *ngIf="this.failed">
+                <p *ngIf="this.err != '401'">Something went wrong<br>Please try again</p>
+                <p *ngIf="this.err == '401'">Login Failed<br>Check UserId and/or Password</p>
+            </div>
+        </div>
+        <button type="submit" class="submit-button" [disabled]="!loginForm.valid"
+            [ngClass]="{'disabled-btn': !loginForm.valid}">Login</button>
+    </form>
+</div>

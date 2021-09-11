@@ -1,0 +1,43 @@
+<div class="heading">
+    <h1 class="main-heading">My Condition Details</h1>
+</div>
+<div *ngIf="conditionDetails" class="details-container">
+    <div class="ur-number-container detail-section">
+        <h3>UR Number: {{urNumber}}</h3>
+    </div>
+    <div class="diagnosis-container detail-section">
+        <h3 class="container-title">Diagnosis:</h3>
+        <p>{{conditionDetails.diagnosis}}</p>
+    </div>
+    <div class="date-container detail-section">
+        <h3>Date of Procedure: {{conditionDetails.procedureDate | date: "d-MMM-yyyy"}}</h3>
+    </div>
+    <div class="appointment-container detail-section">
+        <h3>Next Appointment: {{conditionDetails.nextAppointment | date: "d-MMM-yyyy, h:mm a"}}</h3>
+    </div>
+    <div *ngIf="conditionDetails.myDrainage" class="drainage detail-section">
+        <h3>My Drainage</h3>
+        <div class="drainage-detail">
+            <div class="drainage-grid">
+                <h4>Last Drainage:</h4>
+                <p>{{conditionDetails.myDrainage.drainageDate | date: "d-MMM-yyyy, h:mm a"}}</p>
+            </div>
+            <div class="drainage-grid">
+                <h4>Duration:</h4>
+                <p>{{duration}}</p>
+            </div>
+            <div class="drainage-grid">
+                <h4>Fluid Drained:</h4>
+                <p>{{conditionDetails.myDrainage.fluidScore}} mL</p>
+            </div>
+            <div class="drainage-grid">
+                <h4>Level of Breathlessness:</h4>
+                <p>{{breath}}</p>
+            </div>
+            <div class="drainage-grid">
+                <h4>Level of pain:</h4>
+                <p>{{pain}}</p>
+            </div>
+        </div>
+    </div>
+</div>

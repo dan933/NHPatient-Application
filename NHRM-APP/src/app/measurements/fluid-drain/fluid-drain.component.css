@@ -1,0 +1,119 @@
+.container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template: repeat(7, 50px) / 150px 150px;
+}
+
+.error {
+    margin: 10px;
+    color: crimson;
+    font-weight: bold;
+    text-align: center;
+    width: 300px;
+    height: 15px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+/*Chrome*/
+
+input[type='range'] {
+    overflow: hidden;
+    width: 280px;
+    height: 53px;
+    -webkit-appearance: none;
+    background-color: #c7c7c7;
+}
+
+input[type='range']::-webkit-slider-runnable-track {
+    height: 54px;
+    -webkit-appearance: none;
+    color: #005cb986;
+}
+
+input[type='range']::-webkit-slider-thumb {
+    width: 5px;
+    height: 54px;
+    -webkit-appearance: none;
+    cursor: pointer;
+    background: #D7374B;
+    box-shadow: -140px 0 0 140px #005cb986;
+}
+
+/** Firefox*/
+
+input[type="range"]::-moz-range-progress {
+    height: 54px;
+    background-color: #005cb986;
+}
+
+input[type="range"]::-moz-range-track {
+    height: 54px;
+    background-color: #c7c7c7;
+}
+
+input[type=range]::-moz-range-thumb {
+    height: 54px;
+    width: 5px;
+    background: #D7374B;
+}
+
+.submit {
+    display: grid;
+    justify-items: center;
+}
+
+.fluid-input {
+    justify-self: center;
+    background-color: #D2E8F2;
+    width: 100px;
+    height: 60px;
+    border: 1px solid #707070;
+    border-radius: 5px;
+    font-size: xx-large;
+    text-align: center;
+    grid-area: 4/1;
+    padding: 0;
+}
+
+.slider-and-ticks {
+    justify-self: center;
+    grid-area: 4/2;
+    transform: rotate(270deg);
+    border: 1px solid black;
+    height: 55px;
+    width: 282px;
+}
+
+datalist {
+    margin-top: -42px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.upper-lim {
+    font-weight: bold;
+    align-self: flex-start;
+    justify-self: center;
+    grid-area: 1 / 2;
+}
+
+.lower-lim {
+    font-weight: bold;
+    justify-self: center;
+    align-self: flex-end;
+    grid-area: 7 / 2;
+}

@@ -1,0 +1,14 @@
+h2 {
+    font-weight: bold;
+    text-align: center;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+mat-dialog-content {
+    max-width: 700px;
+}

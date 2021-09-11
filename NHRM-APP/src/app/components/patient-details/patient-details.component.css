@@ -1,0 +1,77 @@
+.heading h1 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.details-container {
+    max-width: 840px;
+    margin: auto;
+}
+
+.details-container h3 {
+    font-size: 1em;
+}
+
+.ur-number-container {
+    background-color: #D2E8F2;
+}
+
+.diagnosis-container {
+    background-color: #DAF4C8;
+}
+
+.date-container {
+    background-color: #F4F8C2;
+}
+
+.appointment-container {
+    background-color: #F9BFBF;
+}
+
+.detail-section {
+    padding: 10px;
+    margin: 20px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    border: solid 1px var(--nh-grey);
+    border-radius: 5px;
+}
+
+.drainage {
+    background-color: #e7af6e;
+}
+
+.drainage h3 {
+    text-align: center;
+    font-size: 1em;
+}
+
+.drainage-detail {
+    margin: auto;
+    margin-top: 10px;
+    background-color: #f5cd9f;
+    border-radius: 5px;
+    max-width: 700px;
+}
+
+.drainage-grid {
+    padding: 5px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #f5cd9f;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.drainage-grid h4 {
+    text-align: left;
+    font-size: .9em;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+span {
+    display: flex;
+    justify-content: center;
+}
